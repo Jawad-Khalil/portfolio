@@ -1,0 +1,825 @@
+/* Resetting styles (for all) (uniform starting point) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6; /* Distance between two lines  */
+  background-color: white;
+}
+
+/* Header styles */
+header {
+  background-color: #002b5b; /* Navy Blue */
+  color: #ffffe0; /* Soft Yellow */
+  padding: 30px 0; /* Padding to the top and bottom */
+  text-align: center; /* Center align header content */
+}
+
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 10px 0; /* Small padding for smaller screens */
+  }
+}
+
+.top-menu {
+  text-align: center;
+}
+
+.center {
+  display: inline-block; /* More versatile in terms of layout control compared to purely inline elements */
+}
+
+.center h1,
+.center p {
+  margin: 0;
+}
+
+.email_info a {
+  color: #ffffe0; /* Soft Yellow */
+}
+
+.email_info img {
+  margin-bottom: -4px;
+}
+.mobile_info img {
+  margin-bottom: -4px;
+}
+
+/* CSS for Menu Section */
+.menu {
+  background-color: #2f4f4f; /* Dark Slate Gray */
+  text-align: center;
+  padding: 5px 0;
+}
+
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media only screen and (max-width: 767px) {
+  .menu {
+    padding: 1px 0; /* Adding padding to the top and bottom */
+  }
+}
+
+.menu a {
+  text-decoration: none; /* Removes underline from all links in the menu */
+  color: #ffffe0; /* Soft Yellow */
+}
+
+.menu ul {
+  list-style-type: none; /*  Removes the default bullet points */
+  padding: 2px; /* Removes default padding */
+}
+
+.menu ul li {
+  display: inline-block; /* Displays menu items horizontally */
+  margin-right: 15px; /* Adding space between menu items */
+}
+
+.menu ul li:last-child {
+  margin-right: 0; /* Removes margin from the last menu item */
+}
+
+.menu li a:hover {
+  font-weight: bold;
+  text-decoration: underline; /* Underline only when hovered */
+}
+
+/* CSS for Profile Image Section */
+.profile-container {
+  position: relative; /* Flexibility for positioning child elements */
+  display: flex; /* To create flexible and responsive layouts */
+  justify-content: center; /* Child elements are centered along the horizontal axis */
+  align-items: center; /* Child elements are centered along the vertical axis */
+  height: 48vh; /* 48% of the viewport height (the height of the visible area of the web page) */
+  background-image: url("https://images.unsplash.com/photo-1495081703108-1fdad36fcb5a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Visually appealing background image to the container */
+  background-size: cover; /* Maintains the aspect ratio of the image while covering the entire container */
+  background-position: center; /* Focal point of the background image is centered, */
+}
+
+.profile-image {
+  position: relative; /*  */
+  z-index: 1; /* Ensures that this element is placed in front of other elements with lower z-index values. */
+  width: 350px;
+  height: 350px;
+  border-radius: 50%; /* Ensures the container is perfectly circular */
+  overflow: hidden; /* Prevents parts of the image from spilling out of the defined 350px by 350px circular area */
+}
+
+.profile-image img {
+  width: 100%; /* Ensures the image fills the container */
+  height: 100%; /* Ensures the image fills the container */
+  object-fit: cover; /* Ensures the image is cropped to cover the entire container */
+}
+
+/* Adjustments for the screens smaller than 718px (usually mobile devices) */
+@media screen and (max-width: 718px) {
+  .profile-container {
+    height: 31vh; /* For very small screens */
+  }
+
+  .profile-image {
+    width: 215px; /* Smaller width for very small screens */
+    height: 215px; /* Smaller height for very small screens */
+  }
+}
+
+/* Styles for main content of the webpage */
+main {
+  padding: 8px;
+}
+
+section {
+  margin-bottom: 15px;
+}
+
+section h2 {
+  color: #002b5b; /* Navy Blue */
+  text-decoration: none;
+  font-size: 35px;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
+  margin-left: 15px;
+  margin-bottom: 16px;
+}
+
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media only screen and (max-width: 767px) {
+  section h2 {
+    font-size: 25px;
+  }
+}
+
+section h3 {
+  color: #228b22; /* Forest Green */
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+/* Paragraph styles */
+p {
+  text-align: justify;
+}
+
+/* Specific symbols for each section */
+#personal-info h2::before {
+  content: "📋"; /* Symbol for Personal Information */
+  position: relative; /* fine-tuning of the symbol's placement relative to the <h1> heading */
+  left: -10px;
+  top: 0; /* the symbol is vertically aligned with the text */
+}
+
+#education h2::before {
+  content: "🎓"; /* Symbol for Education */
+  position: relative;
+  left: -10px;
+  top: 0;
+}
+
+#certificates h2::before {
+  content: "📜"; /* Symbol for Certificates */
+  position: relative;
+  left: -10px;
+  top: 0;
+}
+
+#skills h2::before {
+  content: "💡"; /* Symbol for Skills */
+  position: relative;
+  left: -10px;
+  top: 0;
+}
+
+#jobs h2::before {
+  content: "💼"; /* Symbol for Briefcase, representing jobs or employment */
+  position: relative;
+  left: -10px;
+  top: 0;
+}
+
+#projects h2::before {
+  content: "📂"; /* Symbol for Folder, representing organized projects */
+  position: relative;
+  left: -10px;
+  top: 0;
+}
+
+section ul {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1px;
+}
+
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0px;
+  }
+
+  #about p {
+    margin-top: -7px;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #skills p {
+    font-size: 14px;
+  }
+}
+
+/* Specific CSS for the h2 in the about section */
+#about h2 {
+  margin-top: 3px;
+  margin-bottom: 2px;
+}
+
+/* format paragraph */
+.spaced {
+  display: block; /* Ensures the element behaves like a block element */
+  text-indent: 30px; /* visually separates the start of a paragraph from the rest of the text */
+  margin-top: 7px;
+}
+
+/* CSS for Scroll to Top Button */
+.scroll-to-top-btn {
+  position: fixed; /* Ensures the button is always visible to the user as they scroll */
+  bottom: 20px; /* Positions the button 20 pixels away from the bottom */
+  right: 20px;
+  display: none; /* Initially hides the button from view */
+  font-size: 20px;
+  color: white; /* Sets the text or icon color to white */
+  background-color: #002b5b; /* Sets the background color of the button to a Navy Blue (#002B5B) */
+  padding: 10px; /* Ensures the button content is not cramped and has some space around it */
+  border-radius: 60%; /* Creates a circular or oval shape */
+  text-decoration: none; /* Removes any underlining from text or links inside the button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease-in-out, transform 0.3s; /* Smoothly animates changes to the button’s opacity and transform properties */
+  z-index: 1000; /* Prevents the button from being hidden behind other content on the page */
+  height: 43px;
+}
+
+.scroll-to-top-btn:hover {
+  opacity: 0.8; /* Reduces the button's opacity to 80% of its original value when hovered over */
+  transform: scale(
+    1.1
+  ); /* Increases the size of the button by 10% when hovered over */
+}
+
+/* Show the button when scrolling down 20px from the top */
+.scroll-to-top-btn.show {
+  /* ".show" from the JavaScript: when the user scrolls down, triggering the button to appear */
+  display: block; /* makes the button visible and ensures it behaves like a block element */
+}
+
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media (max-width: 600px) {
+  .scroll-to-top-btn {
+    bottom: 10px;
+    right: 10px;
+    font-size: 19px;
+    padding: 9px;
+    height: 38px;
+  }
+}
+
+/* "personal-info" Section */
+/* Info table */
+.info-table {
+  width: 55%; /* controling the table's size relative to the parent container */
+  border-collapse: collapse; /* Collapses the borders of the table and its cells into a single border */
+  font-size: 14px; /* Default font size */
+  overflow-x: auto; /* Allows horizontal scrolling if needed */
+}
+
+.info-table th,
+.info-table td {
+  border: 1px solid #002b5b; /* a structured, grid-like appearance */
+  padding: 8px; /* space between the cell content and its borders */
+  text-align: left;
+}
+
+.info-table th {
+  background-color: #ccccff; /* Periwinkle (soft, light purple) */
+  font-weight: bold;
+}
+
+.info-table td:nth-child(2) {
+  /* second child element of each row ("<tr>") */
+  width: 75%; /* Sets the width of the second column to 75% of the table's width */
+}
+
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media screen and (max-width: 768px) {
+  .info-table {
+    width: 100%;
+    font-size: 12px; /* Slightly smaller font size on smaller screens */
+  }
+
+  .info-table th,
+  .info-table td {
+    padding: 6px; /* Reduced padding for smaller screens */
+  }
+
+  .info-table td:nth-child(2) {
+    width: 80%; /* Reset width for better fitting on small screens */
+  }
+
+  /* Optional: Add horizontal scrolling for smaller screens */
+  .info-table-wrapper {
+    overflow-x: auto; /* Allows horizontal scrolling */
+  }
+}
+
+/* "education" Section */
+.education-table {
+  width: 60%; /* width of the table*/
+  border-collapse: collapse;
+  font-size: 14px; /* Default font size */
+}
+
+.education-table th,
+.education-table td {
+  border: 1px solid #002b5b; /* a structured, grid-like appearance */
+  padding: 6px;
+  text-align: left;
+}
+
+.education-table th {
+  background-color: #ccccff; /* Periwinkle (soft, light purple) */
+  font-weight: bold;
+}
+
+.education-table th:nth-child(1),
+.education-table td:nth-child(1) {
+  width: 1%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.education-table th:nth-child(2),
+.education-table td:nth-child(2) {
+  width: 20%;
+}
+
+.education-table th:nth-child(3),
+.education-table td:nth-child(3) {
+  width: 30%;
+}
+
+.education-table th:nth-child(4),
+.education-table td:nth-child(4) {
+  width: 6%;
+  text-align: center;
+}
+
+.education-table th:nth-child(5),
+.education-table td:nth-child(5) {
+  width: 8%;
+}
+
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media screen and (max-width: 768px) {
+  .education-table {
+    font-size: 9px; /* Smaller font size on smaller screens */
+    width: 100%;
+  }
+
+  .education-table th,
+  .education-table td {
+    padding: 3px; /* Reduced padding for smaller screens */
+  }
+
+  .education-table th:nth-child(1),
+  .education-table td:nth-child(1) {
+    width: 1%;
+  }
+
+  .education-table th:nth-child(2),
+  .education-table td:nth-child(2) {
+    width: 12%;
+  }
+
+  .education-table th:nth-child(3),
+  .education-table td:nth-child(3) {
+    width: 23%; /* Adjust width for better fit on small screens */
+  }
+
+  .education-table th:nth-child(4),
+  .education-table td:nth-child(4) {
+    width: 2%;
+  }
+
+  .education-table th:nth-child(5),
+  .education-table td:nth-child(5) {
+    width: 1%;
+  }
+}
+
+/* "languages" Section */
+.languages-table {
+  width: 60%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.languages-table th,
+.languages-table td {
+  border: 1px solid #002b5b; /* Navy Blue */
+  padding: 6px;
+  text-align: center;
+}
+
+.languages-table th {
+  background-color: #ccccff; /* Periwinkle */
+  font-weight: bold;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .languages-table {
+    width: 100%;
+    font-size: 7px;
+  }
+
+  .languages-table th,
+  .languages-table td {
+    padding: 2px;
+  }
+}
+
+#languages h2::before {
+  content: "🌐"; /* Globe symbol */
+  position: relative;
+  left: -10px;
+  top: 0;
+}
+
+/* "certificates" Section
+/* Certificate Table */
+.certificate-table {
+  width: 74%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.certificate-table th,
+.certificate-table td {
+  border: 1px solid #002b5b; /* a structured, grid-like appearance */
+  padding: 6px;
+  text-align: left;
+}
+
+.certificate-table th {
+  background-color: #ccccff; /* Periwinkle (soft, light purple) */
+  font-weight: bold;
+}
+
+.certificate-table th:nth-child(1),
+.certificate-table td:nth-child(1) {
+  width: 1%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.certificate-table th:nth-child(2),
+.certificate-table td:nth-child(2) {
+  width: 23%;
+}
+
+.certificate-table th:nth-child(3),
+.certificate-table td:nth-child(3) {
+  width: 3%;
+  text-align: center;
+}
+
+.certificate-table th:nth-child(4),
+.certificate-table td:nth-child(4) {
+  width: 20%;
+}
+
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media (max-width: 767px) {
+  .certificate-table {
+    width: 100%;
+    font-size: 9px; /* Reduces font size on smaller screens */
+  }
+  .certificate-table th,
+  .certificate-table td {
+    padding: 3px;
+  }
+  .certificate-table th:nth-child(1),
+  .certificate-table td:nth-child(1) {
+    width: 1%;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .certificate-table th:nth-child(2),
+  .certificate-table td:nth-child(2) {
+    width: 23%;
+  }
+
+  .certificate-table th:nth-child(3),
+  .certificate-table td:nth-child(3) {
+    width: 1%;
+    text-align: center;
+  }
+
+  .certificate-table th:nth-child(4),
+  .certificate-table td:nth-child(4) {
+    width: 20%;
+  }
+}
+
+/* "skills" Section */
+
+/* All skills*/
+.skills-list {
+  display: flex; /* items inside it are aligned in a row by default */
+  flex-wrap: wrap; /* automatically move to the next line instead of overflowing out of the container */
+  margin-left: 6px;
+}
+
+/* Each skill*/
+.skill {
+  flex: 0 0 15%; /* take up 15% of the width of its parent container, ensuring a consistent size */
+  box-sizing: border-box; /* padding and border are included within the element's width and height */
+  border: 1px solid #002b5b; /* Navy Blue */
+  border-radius: 35px; /* Rounded corners */
+  padding: 10px; /* Padding inside the box */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+  margin-bottom: 20px;
+  margin-right: 12px;
+  background-color: #f0fff0; /* Honeydew */
+}
+
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media only screen and (max-width: 767px) {
+  .skill {
+    flex: 0 0 45%; /* Two skills per row on smaller screens */
+    margin-right: auto;
+  }
+
+  .skill:nth-child(2n) {
+    margin-right: 1%; /* Removes margin-right for the second item in each row */
+  }
+}
+
+/* Skill pngs */
+.skill img {
+  width: 55px;
+  height: 55px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Skill information*/
+.skill-info {
+  text-align: center;
+  margin-bottom: 2px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.skill-info h2 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  line-height: 1.1; /* Height between the h2 lines*/
+}
+
+.skill-info p {
+  text-align: center;
+}
+
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media screen and (max-width: 768px) {
+  .skill img {
+    width: 55px; /*Adjust image size as needed*/
+    height: 55px;
+    margin-bottom: 5px;
+  }
+}
+
+section a {
+  font-weight: bold;
+}
+
+/* "jobs" Section */
+
+/* Each job */
+.job {
+  border: 1px solid #002b5b; /* Navy Blue */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+  margin-bottom: 20px;
+  background-color: #f0fff0; /* Honeydew */
+}
+
+.job h3 {
+  margin-top: 0px;
+}
+/* Paragraph settings within "project" section */
+#jobs p {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  #jobs p {
+    font-size: 14px;
+  }
+}
+
+#jobs li a {
+  text-decoration: none; /* Removes the underline from the link */
+}
+.job li {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  padding-left: 20px;
+  border: 1px solid #002b5b; /* Navy Blue */
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.job ul {
+  list-style-position: inside; /* Ensures the bullet is inside the padding */
+}
+
+.job h3 a {
+  color: #228b22; /* Forest Green */
+}
+.job img {
+  width: 35px; /*Adjust image size as needed*/
+  height: 35px;
+  margin-bottom: -10px;
+}
+
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media screen and (max-width: 768px) {
+  .job li {
+    font-size: 14px;
+  }
+
+  .job img {
+    width: 25px; /*Adjust image size as needed*/
+    height: 25px;
+    margin-bottom: -5px;
+  }
+}
+
+/* Initialize the counter for the jobs section */
+#jobs {
+  counter-reset: jobCounter; /* Initialize the counter */
+}
+
+#jobs .job h3::before {
+  counter-increment: jobCounter; /* Increment the counter for each h2 */
+  content: "Job " counter(jobCounter) ": "; /* Display the counter before the heading text */
+  font-weight: bold; /* Optional: make the counter bold */
+  margin-right: 4px; /* Optional: add some space between the counter and the heading text */
+}
+
+/* "projects" Section */
+
+/* Each Project */
+.project {
+  border: 1px solid #002b5b; /* Navy Blue */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+  margin-bottom: 20px;
+  background-color: #f0fff0; /* Honeydew */
+}
+
+.project h3 {
+  margin-top: 0px;
+}
+/* Paragraph settings within "project" section */
+#projects p {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  #projects p {
+    font-size: 14px;
+  }
+}
+
+#projects li a {
+  text-decoration: none; /* Removes the underline from the link */
+}
+.project li {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  padding-left: 20px;
+  border: 1px solid #002b5b; /* Navy Blue */
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.project ul {
+  list-style-position: inside; /* Ensures the bullet is inside the padding */
+}
+
+.project h3 a {
+  color: #228b22; /* Forest Green */
+}
+.project img {
+  width: 35px; /*Adjust image size as needed*/
+  height: 35px;
+  margin-bottom: -10px;
+}
+
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media screen and (max-width: 768px) {
+  .project li {
+    font-size: 14px;
+  }
+
+  .project img {
+    width: 25px; /*Adjust image size as needed*/
+    height: 25px;
+    margin-bottom: -5px;
+  }
+}
+
+/* Initialize the counter for the projects section */
+#projects {
+  counter-reset: projectCounter; /* Initialize the counter */
+}
+
+#projects .project h3::before {
+  counter-increment: projectCounter; /* Increment the counter for each h2 */
+  content: "Project " counter(projectCounter) ": "; /* Display the counter before the heading text */
+  font-weight: bold; /* Optional: make the counter bold */
+  margin-right: 4px; /* Optional: add some space between the counter and the heading text */
+}
+
+/* "thanks" Section */
+#thanks h4 {
+  margin-left: 20px;
+}
+
+/* Footer styles */
+.footer {
+  background-color: black;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #f2f2f2;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+/* Link styles */
+.footer-content a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+}
