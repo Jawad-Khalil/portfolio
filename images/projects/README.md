@@ -1,1 +1,1 @@
-**Images for Projects**
+**Images for the Projects**
