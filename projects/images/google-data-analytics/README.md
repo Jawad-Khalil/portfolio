@@ -1,1 +1,1 @@
-**Media folder for the Project "Google Data Analytics"**
+**Media folder for the "Google Data Analytics Project**
