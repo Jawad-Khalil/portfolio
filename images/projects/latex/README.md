@@ -1,1 +1,1 @@
-**Media for the "Latex Projects"**
+**Media for the "LaTex Projects"**
