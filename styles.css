@@ -96,7 +96,7 @@ header {
   justify-content: center; /* Child elements are centered along the horizontal axis */
   align-items: center; /* Child elements are centered along the vertical axis */
   height: 48vh; /* 48% of the viewport height (the height of the visible area of the web page) */
-  background-image: url("https://images.unsplash.com/photo-1495081703108-1fdad36fcb5a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Visually appealing background image to the container */
+  background-image: url("https://raw.githubusercontent.com/Jawad-Khalil/portfolio/refs/heads/main/images/profile-background.avif"); /* Visually appealing background image to the container */
   background-size: cover; /* Maintains the aspect ratio of the image while covering the entire container */
   background-position: center; /* Focal point of the background image is centered, */
 }
