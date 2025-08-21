@@ -1,1 +1,1 @@
-**Media folder for Projects**
+**Media folder for the Projects**
