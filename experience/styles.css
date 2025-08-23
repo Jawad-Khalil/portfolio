@@ -1,0 +1,350 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  counter-reset: job-counter;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+header {
+  background-color: #00695c; /* Dark Emerald Green*/
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Adjust header padding on small screens */
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 10px 0; /* Small padding for smaller screens */
+  }
+}
+
+.contact_info a {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  text-decoration: underline;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.contact_info .icon img {
+  display: block;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.menu-btn {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.menu-btn:hover {
+  background-color: #2980b9; /* Belize Hole */
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0px;
+  padding: 3px;
+  display: none;
+  position: absolute;
+  background-color: #34495e;
+  border-radius: 8px;
+  top: 50px;
+  right: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 290px;
+  box-shadow: 0 9px 9px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  counter-reset: nav-counter;
+}
+
+.nav-list li {
+  border-bottom: 1px solid #3498db;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li:last-child {
+  border-bottom: none;
+}
+
+.nav-list li::before {
+  font-family: "Open Sans", sans-serif;
+  counter-increment: nav-counter;
+  content: counter(nav-counter) ". ";
+  color: white;
+  margin-right: -7px;
+  padding: 5px;
+}
+
+.nav-list li:hover::before {
+  font-weight: bold;
+  color: white;
+}
+
+.nav-list li a {
+  display: block;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+
+.nav-list li:hover {
+  background-color: #2980b9;
+}
+
+.nav-list li:hover a {
+  font-weight: bold;
+  text-shadow: 5px 5px 8px rgba(7, 8, 0, 0.3);
+}
+
+.intro {
+  margin-top: 40px;
+  margin-left: 130px;
+  margin-right: 130px;
+  border: 2px dashed #00695c;
+  border-radius: 10px;
+}
+
+.container {
+  margin-top: 35px;
+  margin-left: 130px;
+  margin-right: 130px;
+  border: 3px double #00695c;
+  border-radius: 10px;
+}
+
+/* .container padding adjustments on small screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0px;
+  }
+}
+
+.welcome h2 {
+  text-align: left;
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+
+.welcome p {
+  text-indent: 2em;
+  padding: 1em;
+  margin-top: -3px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.job-section {
+  background: white;
+  padding: 1em;
+  max-width: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.job-details h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6em;
+  color: #3498db;
+  background-color: #f4f4f9;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+/* Section h2 font size smaller on small screens */
+@media only screen and (max-width: 767px) {
+  .job-details h2 {
+    font-size: 25px;
+  }
+}
+
+.job-details h2::before {
+  counter-increment: job-counter;
+  content: counter(job-counter) ". ";
+  color: #3498db;
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.job-details h3 {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3em;
+  color: maroon;
+  border-left: 8px solid;
+  border-top: 2px solid;
+  padding: 8px 12px;
+  border-radius: 9px;
+  margin-top: 15px;
+  margin-bottom: 12px;
+}
+
+.job-details p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  color: #2c3e50;
+  background-color: #f4f4f9;
+  padding: 6px 10px;
+  border-radius: 10px;
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+/* Jobs paragraphs font-size smaller on small screens */
+@media (max-width: 767px) {
+  .job-details p {
+    font-size: 14px;
+  }
+}
+
+ul {
+  list-style: none;
+  padding-left: 1.5em;
+}
+
+ul li::before {
+  content: "✔ ";
+  color: black;
+}
+
+.challenges-table {
+  width: auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 10px 0;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.challenges-table th {
+  background-color: #3498db;
+  color: white;
+}
+
+.challenges-table th,
+.challenges-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.challenges-table th:last-child,
+.challenges-table td:last-child {
+  border-right: none;
+}
+
+.challenges-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.challenges-table tr:hover {
+  background-color: #ecf9f1;
+}
+
+@media (max-width: 600px) {
+  .challenges-table,
+  .challenges-table thead,
+  .challenges-table tbody,
+  .challenges-table th,
+  .challenges-table td,
+  .challenges-table tr {
+    display: block;
+    width: 100%;
+  }
+  .challenges-table thead tr {
+    display: none;
+  }
+  .challenges-table td {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+    position: relative;
+  }
+  .challenges-table td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #3498db;
+  color: white;
+  padding: 0.5em 0.8em;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.footer {
+  background-color: #2f4f4f;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #f2f2f2;
+  margin-top: 10px;
+}
+
+/* Footer adjustments for small screens */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-content a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
