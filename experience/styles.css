@@ -242,10 +242,9 @@ ul li::before {
 }
 
 .challenges-table {
-  width: auto;
-  border-collapse: separate;
+  width: 100%;
+  border-collapse: collapse;
   border-spacing: 0;
-  margin: 10px 0;
   font-family: "Poppins", sans-serif;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -278,24 +277,21 @@ ul li::before {
   background-color: #ecf9f1;
 }
 
-@media (max-width: 600px) {
-  .challenges-table,
-  .challenges-table thead,
-  .challenges-table tbody,
-  .challenges-table th,
-  .challenges-table td,
-  .challenges-table tr {
+@media (max-width: 768px) {
+  .challenges-table {
     display: block;
     width: 100%;
-  }
-  .challenges-table thead tr {
-    display: none;
   }
   .challenges-table td {
     border: none;
     border-bottom: 1px solid #ccc;
-    padding: 8px;
+    padding: 4px;
     position: relative;
+    font-size: 0.9em;
+  }
+  .challenges-table th {
+    padding: 4px;
+    font-size: 1em;
   }
   .challenges-table td:before {
     content: attr(data-label);
