@@ -47,3 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// OMContentLoaded Event Listener
+document.addEventListener("DOMContentLoaded", function () {
+  // Run when the DOM is fully loaded
+  //This event fires when the initial HTML document has been completely loaded and parsed.
+  const currentYear = new Date().getFullYear(); // Get the current year
+  document.getElementById("footerYear").textContent = currentYear; // Set the current year in the footer
+});
