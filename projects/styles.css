@@ -12,6 +12,7 @@ header {
   text-align: center;
   position: relative;
 }
+
 header h1 {
   margin-bottom: 10px;
 }
@@ -147,7 +148,7 @@ header h1 {
   background-color: #2980b9;
 }
 
-.projects-details-section {
+.projects-details {
   padding: 20px;
   max-width: 1250px;
   margin: 0 auto;
