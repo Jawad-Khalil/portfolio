@@ -231,9 +231,23 @@ header {
   }
 }
 
+.job-info dt {
+  font-weight: bold;
+  color: #00695c; /* dark green accent */
+  margin-top: 13px;
+  margin-bottom: 6px;
+}
+
+.job-info dd {
+  margin-left: 0; /* remove default indent */
+  margin-bottom: 8px;
+  padding-left: 5px; /* small space for neatness */
+  color: #2c3e50; /* dark gray text */
+}
+
 ul {
   list-style: none;
-  padding-left: 1.5em;
+  padding-left: 1em;
 }
 
 ul li::before {
@@ -298,6 +312,62 @@ ul li::before {
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
+  }
+}
+
+.previews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* space between images */
+  justify-content: center; /* center-align rows */
+}
+
+.previews figure {
+  flex: 1 1 calc(50% - 20px); /* two per row */
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.previews img {
+  width: 100%; /* fill the figure box */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  border: 1px solid black;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  font-size: 0.95em; /* Slightly smaller than body text */
+  font-weight: bold;
+  color: #555; /* Soft gray text */
+  margin-top: 4px; /* Space above the caption */
+  margin-bottom: 10px;
+  font-style: italic; /* Optional: italic text */
+  line-height: 1.4; /* Good readability */
+}
+
+@media screen and (max-width: 768px) {
+  .previews {
+    flex: 1 1 45%; /* Two items per row */
+  }
+
+  .previews img {
+    max-width: 100%; /* Ensure images fit on smaller screens */
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .previews {
+    flex: 1 1 100%; /* Full width for each item */
+    margin: 5px 0;
+    flex-direction: column; /* Stack items vertically */
   }
 }
 
