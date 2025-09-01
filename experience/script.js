@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // 5. Add counters before <h3> headings
   // Only if there is more than one <h3> inside a job section
   // ================================
-  document.querySelectorAll(".job-details").forEach(function (section) {
+  document.querySelectorAll(".experience-category").forEach(function (section) {
     const h3s = section.querySelectorAll("h3");
 
     // Apply numbering only if more than 1 job exists inside the section
