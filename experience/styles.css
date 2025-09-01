@@ -25,7 +25,7 @@ header {
   }
 }
 
-.contact_info a {
+.contact-info a {
   display: inline-flex;
   align-items: center;
   color: white;
@@ -34,8 +34,12 @@ header {
   margin-bottom: 8px;
 }
 
-.contact_info .icon img {
+.contact-info .icon img {
   display: block;
+}
+
+.contact-info .text {
+  font-weight: bold;
 }
 
 .navbar {
@@ -61,6 +65,7 @@ header {
 
 .menu-btn:hover {
   background-color: #2980b9; /* Belize Hole */
+  color: white; /* ensures good contrast */
 }
 
 .nav-list {
@@ -107,15 +112,15 @@ header {
 }
 
 .nav-list li a {
-  display: block;
-  padding: 5px;
   color: white;
+  display: block;
+  padding: 6px 10px;
+  position: relative; /* remove absolute */
   text-decoration: none;
   width: 100%;
   height: 100%;
-  position: absolute;
   top: 0;
-  left: 15px;
+  left: 0;
 }
 
 .nav-list li:hover {
@@ -173,7 +178,7 @@ header {
   border-radius: 5px;
 }
 
-.job-details h2 {
+.container h2 {
   font-family: "Poppins", sans-serif;
   font-size: 1.6em;
   color: #3498db;
@@ -382,6 +387,34 @@ figcaption {
   display: none;
   cursor: pointer;
   font-size: 1.2em;
+}
+
+#scrollToTopBtn:hover {
+  opacity: 0.8; /* Reduces the button's opacity to 80% of its original value when hovered over */
+  transform: scale(
+    1.1
+  ); /* Increases the size of the button by 10% when hovered over */
+}
+
+/* Show the button when scrolling down 20px from the top */
+#scrollToTopBtn.show {
+  /* ".show" from the JavaScript: when the user scrolls down, triggering the button to appear */
+  display: block; /* makes the button visible and ensures it behaves like a block element */
+}
+
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media (max-width: 600px) {
+  #scrollToTopBtn {
+    bottom: 10px;
+    right: 10px;
+    font-size: 19px;
+    padding: 9px;
+    height: 38px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .footer {
