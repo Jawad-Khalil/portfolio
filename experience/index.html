@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional job experience of Jawad Khalil with key achievements, challenges, and solutions.">
   <title>Experience - Jawad Khalil</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -14,21 +15,23 @@
     <h1>Jawad Khalil - Experience</h1>
     <div class="center">
       <!-- Notice: This Contact information is excluded from the MIT License and is not intended for reuse or redistribution. -->
-      <div class="contact_info">
-        <a href="mailto:iamjawadkhalil@gmail.com" target="_blank" rel="noopener noreferrer">
+
+      <address class="contact-info">
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=DXDwSWwxqRCPQCsqbGDPChBDssKqCBgjCGdwVrZqMzVTWzzCjsbGMCVztLwDtggDkXpXcJHLtwqFspdxKJxSKvzKHSzhRrmWzPGrsXtqGxVtqDdQnvGJTMqB" target="_blank">
           <span class="icon">
             <img src="https://github.com/Jawad-Khalil/portfolio/blob/main/images/envelope-icon.png?raw=true" width="20" height="20" alt="Email Icon" />
           </span>
           <span class="text">iamjawadkhalil@gmail.com</span>
         </a>
-      </div>
+      </address>
     </div>
 
     <nav class="navbar">
-      <button class="menu-btn" id="menuBtn">&#9776; Menu</button>
+      <button class="menu-btn" id="menuBtn" aria-controls="navList" aria-expanded="false">&#9776; Menu</button>
+
       <ul class="nav-list" id="navList">
-        <li><a href="#math-teaching">Math Teaching</a></li>
-        <li><a href="#sales-manager">Sales Manager</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#sales-management">Sales Management</a></li>
       </ul>
     </nav>
 
@@ -39,7 +42,7 @@
     <div class="intro">
       <section class="welcome">
         <h2>
-          <img src="https://github.com/Jawad-Khalil/portfolio/blob/main/images/waving-hand.png?raw=true" width="30px" alt="Welcome">
+          <img src="https://github.com/Jawad-Khalil/portfolio/blob/main/images/waving-hand.png?raw=true" width="30px" alt="Waving Hand Icon">
           Welcome to the Jobs Page 💼
         </h2>
         <p>
@@ -50,16 +53,17 @@
       </section>
     </div>
 
-    <!-- --------------------------------Teaching Experience-------------------------------- -->
-
     <div class="container">
-      <section id="math-teaching" class="job-section">
-        <div class="job-details">
-          <h2>Mathematics Teaching Experience</h2>
 
-          <!-- Job 1 -->
-          <div class="job">
-            <h3>Math Teacher – Read Foundation Boys College Panjera</h3>
+      <!-- --------------------------------Teaching Experience-------------------------------- -->
+      <div class="category">
+        <h2 id="teaching">Teaching Experience</h2>
+
+        <!-- Experience 1: Read Foundation College -->
+
+        <section id="math-teacher-read-foundation" class="job-section">
+          <div class="job-details">
+            <h3>Math Teacher - Read Foundation Boys College Panjera</h3>
             <dl class="job-info">
               <dt>Duration:</dt>
               <dd>Sep 2022 – Apr 2023 (8 months)</dd>
@@ -81,55 +85,47 @@
               <dt>Languages:</dt>
               <dd>Urdu & English</dd>
 
-              <dt>Challges and Solutions:</dt>
+              <dt>Challenges and Solutions:</dt>
               <dd>
                 <table class="challenges-table">
-                  <tr>
-                    <th>Challenge</th>
-                    <th>Solution</th>
-                  </tr>
-                  <tr>
-                    <td>Low student engagement</td>
-                    <td>Introduced visual aids and interactive teaching techniques</td>
-                  </tr>
-                  <tr>
-                    <td>Differing skill levels among students</td>
-                    <td>Developed tailored support materials and extra sessions</td>
-                  </tr>
-                  <tr>
-                    <td>Fewer student attendance</td>
-                    <td>Resolved personal and family-related issues affecting attendance</td>
-                  </tr>
-                  <tr>
-                    <td>Lack of study materials</td>
-                    <td>Organized a class fund to purchase essential books and supplies</td>
-                  </tr>
+                  <thead>
+                    <tr>
+                      <th>Challenge</th>
+                      <th>Solution</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Low student engagement</td>
+                      <td>Introduced visual aids and interactive teaching techniques</td>
+                    </tr>
+                    <tr>
+                      <td>Differing skill levels among students</td>
+                      <td>Developed tailored support materials and extra sessions</td>
+                    </tr>
+                    <tr>
+                      <td>Fewer student attendance</td>
+                      <td>Resolved personal and family-related issues affecting attendance</td>
+                    </tr>
+                    <tr>
+                      <td>Lack of study materials</td>
+                      <td>Organized a class fund to purchase essential books and supplies</td>
+                    </tr>
+                  </tbody>
                 </table>
               </dd>
-
-              <!--
-              <dt>Career Gallery:</dt>
-              <dd>
-
-                <div class="previews">
-                  <figure>
-                    <img src="" alt="">
-                    <figcaption></figcaption>
-                  </figure>
-                </div>
-              </dd>
-                -->
-
             </dl>
           </div>
+        </section>
 
-          <!-- Job 2 -->
+        <!-- Experience 2: Government College -->
 
-          <div class="job">
-            <h3>Math Teacher – Government Boys Intermediate College Panjera</h3>
+        <section id="math-teacher-govt-college" class="job-section">
+          <div class="job-details">
+            <h3>Math Teacher - Government Boys Intermediate College Panjera</h3>
             <dl class="job-info">
               <dt>Duration:</dt>
-              <dd>Aug 2022 – Sep 2022 (28 Days)</dd>
+              <dd>Aug 2022 - Sep 2022 (28 Days)</dd>
               <dt>Location:</dt>
               <dd>Panjera, District Kotli, AJ&K</dd>
               <dt>Work Environment:</dt>
@@ -151,13 +147,16 @@
               <dd>Urdu & English</dd>
             </dl>
           </div>
+        </section>
 
-          <!-- Job 3 -->
-          <div class="job">
-            <h3>Math Teacher – Allama Iqbal Public Secondary School Panjera</h3>
+        <!-- Experience 3: Public School -->
+
+        <section id="math-teacher-public-school" class="job-section">
+          <div class="job-details">
+            <h3>Math Teacher - Allama Iqbal Public Secondary School Panjera</h3>
             <dl class="job-info">
               <dt>Duration:</dt>
-              <dd>May 2014 – Aug 2014 (4 months)</dd>
+              <dd>May 2014 - Aug 2014 (4 months)</dd>
               <dt>Location:</dt>
               <dd>Panjera, District Kotli, AJ&K</dd>
               <dt>Work Environment:</dt>
@@ -178,90 +177,48 @@
               <dd>Urdu & English</dd>
             </dl>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
 
     <!-- --------------------------------Sales Manager Experience-------------------------------- -->
 
     <div class="container">
-      <section id="sales-manager" class="job-section">
-        <div class="job-details">
-          <h2>Sales Management Experience</h2>
+      <h2 id="sales-management">Sales Management Experience</h2>
 
-          <div class="job">
-            <h3>Wholesale Manager - Sakhi Autos Kotli</h3>
-            <dl class="job-info">
-              <dt>Duration:</dt>
-              <dd>Feb 2022 – Aug 2022 (7 Months)</dd>
-              <dt>Location:</dt>
-              <dd>Kotli, Azad Jammu and Kashmir</dd>
-              <dt>Reporting To:</dt>
-              <dd>Malik Usman, Owner</dd>
-              <dt>Team Size:</dt>
-              <dd>9 staff members</dd>
-              <dt>Work Environment:</dt>
-              <dd>On-site</dd>
-              <dt>Role:</dt>
-              <dd>Oversaw wholesale operations, managed inventory, handled customer relations, and maintained digital records.</dd>
-              <dt>Key Achievements:</dt>
-              <dd>
-                <ul>
-                  <li>Raised monthly sales by 15%</li>
-                  <li>Optimized inventory accuracy through structured logs</li>
-                </ul>
-              </dd>
-              <dt>Skills & Tools Used:</dt>
-              <dd>MS Excel, Inventory Management, Sales, Data Entry, Communication</dd>
-              <dt>Soft Skills:</dt>
-              <dd>Sales Management</dd>
-              <dt>Languages:</dt>
-              <dd>Urdu (Professional), Punjabi, & Hindko</dd>
-            </dl>
-          </div>
+      <section id="wholesale-manager-sahi-autos" class="job-section">
+        <div class="job-details">
+          <h3>Wholesale Manager - Sakhi Autos Kotli</h3>
+          <dl class="job-info">
+            <dt>Duration:</dt>
+            <dd>Feb 2022 - Aug 2022 (7 Months)</dd>
+            <dt>Location:</dt>
+            <dd>Kotli, Azad Jammu and Kashmir</dd>
+            <dt>Reporting To:</dt>
+            <dd>Malik Usman, Owner</dd>
+            <dt>Team Size:</dt>
+            <dd>9 staff members</dd>
+            <dt>Work Environment:</dt>
+            <dd>On-site</dd>
+            <dt>Role:</dt>
+            <dd>Oversaw wholesale operations, managed inventory, handled customer relations, and maintained digital records.</dd>
+            <dt>Key Achievements:</dt>
+            <dd>
+              <ul>
+                <li>Raised monthly sales by 15%</li>
+                <li>Optimized inventory accuracy through structured logs</li>
+              </ul>
+            </dd>
+            <dt>Skills & Tools Used:</dt>
+            <dd>MS Excel, Inventory Management, Sales, Data Entry, Communication</dd>
+            <dt>Soft Skills:</dt>
+            <dd>Sales Management</dd>
+            <dt>Languages:</dt>
+            <dd>Urdu (Professional), Punjabi, & Hindko</dd>
+          </dl>
         </div>
       </section>
     </div>
-
-    <!-- -------------------------------- -------------------------------- -->
-    <!--
-    <div class="container">
-      <section id="" class="job-section">
-        <div class="job-details">
-          <h2></h2>
-          <div class="job">
-            <h3></h3>
-            <dl class="job-info">
-              <dt>Duration:</dt>
-              <dd></dd>
-              <dt>Location:</dt>
-              <dd></dd>
-              <dt>Work Environment:</dt>
-              <dd></dd>
-              <dt>Role:</dt>
-              <dd></dd>
-              <dt>Key Achievements:</dt>
-              <dd>
-                <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-              </dd>
-              <dt>Skills & Tools Used:</dt>
-              <dd></dd>
-              <dt>Soft Skills:</dt>
-              <dd></dd>
-              <dt>Languages:</dt>
-              <dd></dd>
-            </dl>
-          </div>
-        </div>
-      </section>
-     </div>
-
-      -->
 
   </main>
 
