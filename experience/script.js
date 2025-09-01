@@ -42,8 +42,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // ================================
   // 4. Navigation Menu Toggle
   // ================================
+
   const menuBtn = document.getElementById("menuBtn");
   const navList = document.getElementById("navList");
+  menuBtn.addEventListener("click", () => {
+    const expanded = menuBtn.getAttribute("aria-expanded") === "true" || false;
+    menuBtn.setAttribute("aria-expanded", !expanded);
+    navList.classList.toggle("active");
+  });
 
   if (menuBtn && navList) {
     const navLinks = navList.querySelectorAll("a");
@@ -88,6 +94,17 @@ document.addEventListener("DOMContentLoaded", function () {
         counterSpan.style.marginRight = "4px";
         h3.insertBefore(counterSpan, h3.firstChild); // Insert before heading text
       });
+    }
+  });
+});
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    const targetId = this.getAttribute("href");
+    const target = document.querySelector(targetId);
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: "smooth" });
     }
   });
 });
