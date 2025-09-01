@@ -170,6 +170,12 @@ header {
   font-size: 20px;
 }
 
+@media only screen and (max-width: 767px) {
+  .welcome p {
+    font-size: 16px;
+  }
+}
+
 .job-section {
   background: white;
   padding: 1em;
