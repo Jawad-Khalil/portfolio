@@ -167,7 +167,7 @@ header {
   padding: 1em;
   margin-top: -3px;
   text-align: left;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -201,6 +201,25 @@ header {
   .job-details h2 {
     font-size: 25px;
   }
+}
+
+/* Reset the counter at the container level */
+.experience-category {
+  counter-reset: category-counter;
+}
+
+/* Reset once for the whole page */
+body {
+  counter-reset: experience-counter;
+}
+
+/* Add number before each top-level category H2 */
+.experience-category > h2::before,
+.category > h2::before {
+  counter-increment: experience-counter;
+  content: counter(experience-counter) ". ";
+  color: #3498db;
+  margin-right: 6px;
 }
 
 .job-details h2::before {
