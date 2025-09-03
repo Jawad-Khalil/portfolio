@@ -185,6 +185,7 @@ header {
   margin-right: 30px;
   border: 1px solid #00695c;
   border-radius: 10px;
+  background-color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -258,7 +259,7 @@ header {
 }
 
 .job-section {
-  background: white;
+  background-color: #f4f4f9;
   padding: 5px 5px;
   max-width: auto;
   border: 1px solid black;
@@ -275,45 +276,31 @@ header {
   }
 }
 
-.job-details h2::before {
-  counter-increment: job-counter;
-  content: counter(job-counter) ". ";
-  color: #3498db;
-  font-weight: bold;
-  margin-right: 4px;
+.job-heading {
+  padding: 0px 5px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+  background-color: #00695c;
 }
-
-.job-details h3 {
+.job-heading h3 {
   display: inline-block;
   font-family: "Poppins", sans-serif;
   font-size: 1.3em;
-  color: maroon;
-  border-left: 8px solid maroon;
-  border-top: 2px solid maroon;
+  color: white;
+  border-left: 8px solid white;
+  border-top: 2px solid white;
   padding: 8px 12px;
   border-radius: 9px;
   margin-top: 15px;
   margin-bottom: 12px;
 }
 
-.job-details p {
-  font-family: "Poppins", sans-serif;
-  font-size: 1em;
-  color: #2c3e50;
-  background-color: #f4f4f9;
-  padding: 6px 10px;
-  border-radius: 10px;
-  margin: 6px 0;
-  line-height: 1.5;
+@media only screen and (max-width: 767px) {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
-
-/* Jobs paragraphs font-size smaller on small screens */
-@media (max-width: 767px) {
-  .job-details p {
-    font-size: 14px;
-  }
-}
-
 .job-info dt {
   font-weight: bold;
   color: #00695c; /* dark green accent */
