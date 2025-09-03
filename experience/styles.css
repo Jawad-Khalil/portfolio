@@ -4,11 +4,12 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
-  counter-reset: job-counter;
+  counter-reset: experience-counter job-counter;
 }
 
 h1 {
   margin-bottom: 10px;
+  font-size: 36px;
 }
 
 @media (max-width: 768px) {
@@ -16,6 +17,7 @@ h1 {
     font-size: 26px;
   }
 }
+
 header {
   background-color: #00695c; /* Dark Emerald Green*/
   color: white;
@@ -48,10 +50,10 @@ header {
 }
 
 @media only screen and (max-width: 767px) {
-    .contact-info .text {
-      font-size: 14px;
-    }
+  .contact-info .text {
+    font-size: 14px;
   }
+}
 @media only screen and (max-width: 767px) {
   .contact-info {
     margin-top: -10px;
@@ -76,10 +78,9 @@ header {
 
 @media screen and (max-width: 767px) {
   .menu-btn {
-  padding: 5px 5px;
-  font-size: 16px;
-}
-  
+    padding: 5px 5px;
+    font-size: 16px;
+  }
 }
 .menu-btn:focus {
   outline: 2px solid #3498db;
@@ -87,7 +88,7 @@ header {
 }
 
 .menu-btn:hover {
-  background-color: #2980b9; /* Belize Hole */
+  background-color: #3498db; /* Belize Hole */
   color: white; /* ensures good contrast */
 }
 
@@ -97,7 +98,7 @@ header {
   padding: 3px;
   display: none;
   position: absolute;
-  background-color: #34495e;
+  background-color: maroon;
   border-radius: 8px;
   top: 50px;
   right: auto;
@@ -156,33 +157,48 @@ header {
 }
 
 .intro {
-  margin-top: 40px;
+  margin-top: 25px;
+  margin-bottom: -10px;
   margin-left: 30px;
   margin-right: 30px;
   border: 2px dashed #00695c;
   border-radius: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .intro {
+    margin-top: 20px;
+    border: 2px dashed #00695c;
+  }
+}
+
 .container {
   margin-top: 35px;
   margin-left: 30px;
   margin-right: 30px;
-  border: 3px double #00695c;
+  border: 1px solid #00695c;
   border-radius: 10px;
 }
 
 @media (max-width: 768px) {
   .intro,
   .container {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 
 .welcome h2 {
+  font-size: 26px;
   text-align: left;
   margin-bottom: 0px;
   margin-left: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .welcome h2 {
+    font-size: 20px;
+  }
 }
 
 .welcome p {
@@ -190,12 +206,12 @@ header {
   padding: 1em;
   margin-top: -3px;
   text-align: left;
-  font-size: 19px;
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 767px) {
   .welcome p {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -209,7 +225,7 @@ header {
 
 .container h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 1.6em;
+  font-size: 24px;
   color: #3498db;
   background-color: #f4f4f9;
   padding: 12px 20px;
@@ -229,11 +245,6 @@ header {
 /* Reset the counter at the container level */
 .experience-category {
   counter-reset: category-counter;
-}
-
-/* Reset once for the whole page */
-body {
-  counter-reset: experience-counter;
 }
 
 /* Add number before each top-level category H2 */
