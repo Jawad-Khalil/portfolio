@@ -449,11 +449,29 @@ figcaption {
   }
 }
 
+.last-thank {
+  padding: 1px 100px;
+}
+
+.last-thank p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+  .last-thank {
+    padding: 0px 20px;
+  }
+  .last-thank p {
+    font-size: 14px;
+  }
+}
+
 #scrollToTopBtn {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #3498db;
+  background: #00695c;
   color: white;
   padding: 0.5em 0.8em;
   border-radius: 50%;
@@ -491,7 +509,7 @@ html {
 }
 
 .footer {
-  background-color: #2f4f4f;
+  background-color: #00695c;
   padding: 10px 0;
   text-align: center;
   font-size: 14px;
