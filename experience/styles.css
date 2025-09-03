@@ -4,7 +4,7 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
-  counter-reset: experience-counter job-counter;
+  counter-reset: experience-counter job-counter category-counter;
 }
 
 h1 {
@@ -83,7 +83,7 @@ header {
   }
 }
 .menu-btn:focus {
-  outline: 2px solid #3498db;
+  outline: 2px solid black;
   outline-offset: 2px;
 }
 
@@ -98,7 +98,7 @@ header {
   padding: 3px;
   display: none;
   position: absolute;
-  background-color: maroon;
+  background-color: #3498db; /* main accent blue */
   border-radius: 8px;
   top: 50px;
   right: auto;
@@ -111,10 +111,17 @@ header {
 }
 
 .nav-list li {
-  border-bottom: 1px solid #3498db;
+  border-bottom: 1px solid #fff;
   position: relative;
   display: flex;
   align-items: center;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-list li {
+    font-size: 14px;
+  }
 }
 
 .nav-list li:last-child {
@@ -165,7 +172,7 @@ header {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .intro {
     margin-top: 20px;
     border: 2px dashed #00695c;
@@ -211,15 +218,20 @@ header {
 
 @media only screen and (max-width: 767px) {
   .welcome p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
-.experience-category h2 {
-  font-family: "Poppins", sans-serif;
+.category-heading {
+  padding: 5px 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.category-heading h2 {
   font-size: 24px;
-  color: #3498db;
-  background-color: #f4f4f9;
+  color: #fff;
+  background-color: #3498db;
   padding: 12px 20px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -227,21 +239,33 @@ header {
   margin-bottom: 25px;
 }
 
-/* Add number before each top-level category H2 */
-.experience-category > h2::before,
-.category > h2::before {
+@media only screen and (max-width: 767px) {
+  .category-heading h2 {
+    font-size: 20px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Number each main category (Teaching, Sales, etc.) */
+.experience-category .category-heading > h2::before {
   counter-increment: experience-counter;
   content: counter(experience-counter) ". ";
-  color: #3498db;
+  color: #fff;
+  font-weight: bold;
   margin-right: 6px;
 }
 
 .job-section {
   background: white;
-  padding: 1em;
+  padding: 5px 5px;
   max-width: auto;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 15px;
 }
 
 /* Section h2 font size smaller on small screens */
