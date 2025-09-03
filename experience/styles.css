@@ -11,6 +11,11 @@ h1 {
   margin-bottom: 10px;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 26px;
+  }
+}
 header {
   background-color: #00695c; /* Dark Emerald Green*/
   color: white;
@@ -21,7 +26,7 @@ header {
 /* Adjust header padding on small screens */
 @media only screen and (max-width: 767px) {
   header {
-    padding: 10px 0; /* Small padding for smaller screens */
+    padding: 5px 0; /* Small padding for smaller screens */
   }
 }
 
