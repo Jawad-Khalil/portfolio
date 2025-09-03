@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
       h3s.forEach(function (h3, index) {
         const counterSpan = document.createElement("span");
         counterSpan.textContent = index + 1 + ". "; // Add number (1., 2., 3., etc.)
-        counterSpan.style.color = "maroon"; // Style number
+        counterSpan.style.color = "white"; // Style number
         counterSpan.style.fontWeight = "bold";
         counterSpan.style.marginRight = "4px";
         h3.insertBefore(counterSpan, h3.firstChild); // Insert before heading text
