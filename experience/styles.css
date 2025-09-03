@@ -26,7 +26,7 @@ header {
 /* Adjust header padding on small screens */
 @media only screen and (max-width: 767px) {
   header {
-    padding: 5px 0; /* Small padding for smaller screens */
+    padding: 4px 0; /* Small padding for smaller screens */
   }
 }
 
@@ -47,6 +47,17 @@ header {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 767px) {
+    .contact-info .text {
+      font-size: 14px;
+    }
+  }
+@media only screen and (max-width: 767px) {
+  .contact-info {
+    margin-top: -10px;
+  }
+}
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -63,6 +74,13 @@ header {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .menu-btn {
+  padding: 5px 5px;
+  font-size: 16px;
+}
+  
+}
 .menu-btn:focus {
   outline: 2px solid #3498db;
   outline-offset: 2px;
