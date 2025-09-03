@@ -215,15 +215,7 @@ header {
   }
 }
 
-.job-section {
-  background: white;
-  padding: 1em;
-  max-width: auto;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-
-.container h2 {
+.experience-category h2 {
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   color: #3498db;
@@ -235,18 +227,6 @@ header {
   margin-bottom: 25px;
 }
 
-/* Section h2 font size smaller on small screens */
-@media only screen and (max-width: 767px) {
-  .job-details h2 {
-    font-size: 25px;
-  }
-}
-
-/* Reset the counter at the container level */
-.experience-category {
-  counter-reset: category-counter;
-}
-
 /* Add number before each top-level category H2 */
 .experience-category > h2::before,
 .category > h2::before {
@@ -254,6 +234,21 @@ header {
   content: counter(experience-counter) ". ";
   color: #3498db;
   margin-right: 6px;
+}
+
+.job-section {
+  background: white;
+  padding: 1em;
+  max-width: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+/* Section h2 font size smaller on small screens */
+@media only screen and (max-width: 767px) {
+  .job-details h2 {
+    font-size: 25px;
+  }
 }
 
 .job-details h2::before {
