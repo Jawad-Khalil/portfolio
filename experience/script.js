@@ -40,39 +40,41 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // ================================
-  // 4. Navigation Menu Toggle
+  // 4. Navigation Menu Toggle (Clean Version)
   // ================================
-
   const menuBtn = document.getElementById("menuBtn");
   const navList = document.getElementById("navList");
-  menuBtn.addEventListener("click", () => {
-    const expanded = menuBtn.getAttribute("aria-expanded") === "true" || false;
-    menuBtn.setAttribute("aria-expanded", !expanded);
-    navList.classList.toggle("active");
-  });
 
   if (menuBtn && navList) {
-    const navLinks = navList.querySelectorAll("a");
-
-    // Toggle menu when button is clicked
+    // Toggle menu on button click
     menuBtn.addEventListener("click", (event) => {
-      event.stopPropagation(); // Prevent click from closing menu immediately
-      navList.style.display =
-        navList.style.display === "block" ? "none" : "block";
+      event.stopPropagation();
+      const expanded = menuBtn.getAttribute("aria-expanded") === "true";
+      menuBtn.setAttribute("aria-expanded", !expanded);
+      navList.classList.toggle("active");
     });
 
     // Close menu when a link is clicked
-    navLinks.forEach((link) => {
+    navList.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
-        navList.style.display = "none";
+        navList.classList.remove("active");
+        menuBtn.setAttribute("aria-expanded", false);
       });
     });
 
-    // Close menu if clicking outside of it
+    // Close menu if clicking outside
     document.addEventListener("click", (event) => {
-      const target = event.target;
-      if (!navList.contains(target) && target !== menuBtn) {
-        navList.style.display = "none";
+      if (!navList.contains(event.target) && event.target !== menuBtn) {
+        navList.classList.remove("active");
+        menuBtn.setAttribute("aria-expanded", false);
+      }
+    });
+
+    // Close menu on Escape key
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        navList.classList.remove("active");
+        menuBtn.setAttribute("aria-expanded", false);
       }
     });
   }
