@@ -33,22 +33,28 @@ Please respect these restrictions.
 All other source code, text, and project descriptions remain licensed under the MIT License.
 
 ## Personal Information
-You can view my personal information by visiting [**here**](https://jawad-khalil.github.io/Jawad_Khalil_Portfolio/#personal-info) (Right-click and select "Open link in new tab" to open in a new tab).
+You can view my personal information by visiting [**here**](https://jawad-khalil.github.io/portfolio/#personal-info) (Right-click and select "Open link in new tab" to open in a new tab).
 
 ## Education
-You can view my educational information by visiting [**here**](https://jawad-khalil.github.io/Jawad_Khalil_Portfolio/#education).
+You can view my educational information by visiting [**here**](https://jawad-khalil.github.io/portfolio/#education).
+
+## Languages
+You can view my language information by visiting [**here**](https://jawad-khalil.github.io/portfolio/#languages)
 
 ## Certificates
-You can view my certificate information by visiting [**here**](https://jawad-khalil.github.io/Jawad_Khalil_Portfolio/#certificates).
+You can view my certificate information by visiting [**here**](https://jawad-khalil.github.io/portfolio/#certificates).
 
 ## Skills
-You can view my skills information by visiting [**here**](https://jawad-khalil.github.io/Jawad_Khalil_Portfolio/#skills).
+You can view my skills information by visiting [**here**](https://jawad-khalil.github.io/portfolio/#skills).
+
+## Jobs
+You can view my jobs information by visiting [**here**](https://jawad-khalil.github.io/portfolio/#jobs)
 
 ## Projects
-You can view my project information by visiting [**here**](https://jawad-khalil.github.io/Jawad_Khalil_Portfolio/#projects).
+You can view my project information by visiting [**here**](https://jawad-khalil.github.io/portfolio/#projects).
 
 ## How to View My Portfolio
-You can view my portfolio by visiting [**here**](https://jawad-khalil.github.io/Jawad_Khalil_Portfolio/).
+You can view my portfolio by visiting [**here**](https://jawad-khalil.github.io/portfolio/).
 
 ## Technologies Used
 - HTML
