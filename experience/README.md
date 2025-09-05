@@ -1,6 +1,8 @@
 # Experience Folder – Usage Notice
 
-This folder contains files related to **Jawad Khalil’s professional experience**. It documents my job experiences, responsibilities, skills, and achievements. It is part of my personal portfolio and intended for **educational and reference use** only.
+This folder contains files related to **Jawad Khalil’s professional experience**. 
+It documents my job experiences, responsibilities, skills, and achievements. 
+It is part of my personal portfolio and intended for **educational and reference use** only.
 
 ## ⚠️ Restrictions
 1. **Images Folder Excluded**  
@@ -12,7 +14,4 @@ This folder contains files related to **Jawad Khalil’s professional experience
    - Provided **for reference only** and must not be copied, published, or shared.  
 
 ## ✅ Licensed Content
-- All other text and code files (except where noted above) are covered under the main [MIT License](../experience/LICENSE.txt).    
-
-## 📅 Last Updated
-September 2025
+- All other text and code files (except where noted above) are covered under the main [MIT License](../experience/LICENSE.txt).
