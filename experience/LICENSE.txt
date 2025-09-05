@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2024-Present Jawad Khalil
+Copyright (c) 2024–Present Jawad Khalil
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,16 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+## Exclusions (Not Covered by This License)
+
+The following are excluded from this license and remain **all rights reserved** 
+by the author, Jawad Khalil:
+
+1. The entire `/experience/images/` folder and its contents.  
+2. Personal information (e.g., name and email) displayed on the experience page.  
+
+These excluded items may not be copied, used, or distributed without explicit 
+written permission from the author.
