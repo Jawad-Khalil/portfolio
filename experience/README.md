@@ -1,9 +1,9 @@
-**Professional Experience | Jawad Khalil**
-# Experience Folder – Usage Notice
+# Professional Experience | Jawad Khalil
 
+**Experience Folder – Usage Notice**
 This folder contains files related to Jawad Khalil’s professional experience.
 
-⚠️ **Important Restrictions:**
+⚠**Important Restrictions:**
 1. The entire `images/` subfolder is **excluded from the MIT License**.  
    - These files are **proprietary** and must not be copied, redistributed, or used without explicit permission.  
 
