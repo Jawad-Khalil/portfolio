@@ -21,15 +21,16 @@ Hello! I'm Jawad, a passionate and dedicated professional with a strong backgrou
 [iamjawadkhalil@gmail.com](https://mail.google.com/mail/u/0/#inbox?compose=DXDwSWwxqRCPQCsqbGDPChBDssKqCBgjCGdwVrZqMzVTWzzCjsbGMCVztLwDtggDkXpXcJHLtwqFspdxKJxSKvzKHSzhRrmWzPGrsXtqGxVtqDdQnvGJTMqB)
 
 ## LICENSE
-The code, design, and other content in this repository are licensed under the MIT License, except for the personal information section, which is not licensed for reuse or redistribution. Please respect the privacy and confidentiality of the personal information included in this portfolio.
+The code, design, and other content in this repository are licensed under the MIT License, **except for certain exclusions listed below**.  
 
-**Important Note:**
+### ⚠️ Exclusions (Not Covered by MIT License)
+The following items are **proprietary** and must not be copied, redistributed, or reused without explicit permission:  
+- The entire `/Projects` and `/Experience` subfolders, including all images, media files, and preview assets.  
+- Any personal information (such as email addresses, contact details, or sensitive data) contained in the **portfolio code, projects code, or experience code**.  
 
-The following folder and its contents are excluded from the MIT License and are not to be copied, used, or distributed:
+Please respect these restrictions.  
 
-- Projects/*
-
-These files are proprietary, and all rights are reserved by the author.
+All other source code, text, and project descriptions remain licensed under the MIT License.
 
 ## Personal Information
 You can view my personal information by visiting [**here**](https://jawad-khalil.github.io/Jawad_Khalil_Portfolio/#personal-info) (Right-click and select "Open link in new tab" to open in a new tab).
