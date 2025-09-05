@@ -13,4 +13,4 @@ It is part of my personal portfolio and intended for **educational and reference
    - Any references to personal data (such as contact details shown in examples) are **for demonstration only** and must not be reused.  
 
 ## ✅ Licensed Content
-- All text, code snippets, and project descriptions (except where noted above) are covered under the main [MIT License](projects/LICENSE.txt).  
+- All text, code snippets, and project descriptions (except where noted above) are covered under the main [MIT License](/LICENSE.txt).  
