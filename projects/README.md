@@ -6,11 +6,11 @@ It is part of my personal portfolio and intended for **educational and reference
 
 ## ⚠️ Restrictions
 1. **Images and Media**  
-   - All the subfolders inside the "../projects" and any media assets (such as screenshots or previews) are **not covered** by the MIT License.  
+   - All subfolders in this directory and any media assets (such as screenshots or previews) are **not covered** by the MIT License.  
    - These files are **proprietary** and must **not** be copied, redistributed, or used without explicit permission.  
 
 2. **Personal Information**  
-   - Any references to personal data (such as contact details shown in examples) are **for demonstration only** and must not be reused.  
+   - Any references to personal data (such as contact details) are **for demonstration only** and must not be reused.  
 
 ## ✅ Licensed Content
 - All text, code snippets, and project descriptions (except where noted above) are covered under the main [MIT License](../projects/LICENSE.txt).  
