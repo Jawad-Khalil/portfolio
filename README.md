@@ -25,7 +25,7 @@ The code, design, and other content in this repository are licensed under the MI
 
 ### ⚠️ Exclusions (Not Covered by MIT License)
 The following items are **proprietary** and must not be copied, redistributed, or reused without explicit permission:  
-- The entire `/Projects` and `/Experience` subfolders, including all images, media files, and preview assets.  
+- All image and media files in /experience/images/, /projects/images/, and /images/.  
 - Any personal information (such as email addresses, contact details, or sensitive data) contained in the **portfolio code, projects code, or experience code**.  
 
 Please respect these restrictions.  
