@@ -20,7 +20,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Note: The following items are excluded from this license and are not to be copied, used, or distributed:
+⚠️ Exclusions (Not Covered by MIT License)
 - All image and media files in /images/, /experience/images/, /projects/images/.
 - Any preview assets (such as screenshots or design mockups).
 - Any personal information (including, but not limited to, email addresses, contact details, or sensitive data) contained in the portfolio code, projects code, or experience code is excluded from this license.
