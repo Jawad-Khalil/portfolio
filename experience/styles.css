@@ -4,7 +4,7 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
-  counter-reset: experience-counter job-counter category-counter;
+  counter-reset: experience-counter;
 }
 
 h1 {
@@ -53,8 +53,6 @@ header {
   .contact-info .text {
     font-size: 14px;
   }
-}
-@media only screen and (max-width: 767px) {
   .contact-info {
     margin-top: -10px;
   }
@@ -90,6 +88,10 @@ header {
 .menu-btn:hover {
   background-color: #3498db; /* Belize Hole */
   color: white; /* ensures good contrast */
+}
+
+.nav-list.active {
+  display: block;
 }
 
 .nav-list {
@@ -168,15 +170,8 @@ header {
   margin-bottom: -10px;
   margin-left: 30px;
   margin-right: 30px;
-  border: 2px dashed #00695c;
+  border: 1px solid #00695c;
   border-radius: 10px;
-}
-
-@media only screen and (max-width: 767px) {
-  .intro {
-    margin-top: 20px;
-    border: 2px dashed #00695c;
-  }
 }
 
 .container {
@@ -194,6 +189,9 @@ header {
     margin-left: 5px;
     margin-right: 5px;
   }
+  .intro {
+    margin-top: 20px;
+  }
 }
 
 .welcome h2 {
@@ -203,21 +201,22 @@ header {
   margin-left: 20px;
 }
 
-@media only screen and (max-width: 767px) {
-  .welcome h2 {
-    font-size: 20px;
-  }
-}
-
 .welcome p {
   text-indent: 2em;
   padding: 1em;
   margin-top: -3px;
-  text-align: left;
+  text-align: justify;
   font-size: 18px;
 }
 
 @media only screen and (max-width: 767px) {
+  .welcome {
+    margin-left: -7px;
+    margin-right: -7px;
+  }
+  .welcome h2 {
+    font-size: 20px;
+  }
   .welcome p {
     font-size: 16px;
   }
@@ -271,6 +270,8 @@ header {
 @media only screen and (max-width: 767px) {
   .job-section {
     padding: 0px 5px;
+    margin-left: 6px;
+    margin-right: 6px;
   }
 }
 
