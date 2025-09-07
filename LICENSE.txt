@@ -23,6 +23,6 @@ SOFTWARE.
 ⚠️ Exclusions (Not Covered by MIT License)
 - All image and media files in /images/, /experience/images/, /projects/images/.
 - Any preview assets (such as screenshots or design mockups).
-- Any personal information (including, but not limited to, email addresses, contact details, or sensitive data) contained in the portfolio code, projects code, or experience code is excluded from this license.
+- Any personal information (including, but not limited to, email addresses, contact details, or sensitive data) contained in the portfolio code, projects code, or experience code is excluded from this license. These can be used for reference purposes only.
 
 All other source code, text, and project descriptions remain licensed under the MIT License.
