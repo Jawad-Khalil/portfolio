@@ -12,6 +12,10 @@ body {
   background-color: white;
 }
 
+.container h2 {
+  margin-bottom: 20px; /* Section headdings */
+}
+
 /* Header styles */
 header {
   background-color: #002b5b; /* Navy Blue */
@@ -96,7 +100,7 @@ header {
   justify-content: center; /* Child elements are centered along the horizontal axis */
   align-items: center; /* Child elements are centered along the vertical axis */
   height: 48vh; /* 48% of the viewport height (the height of the visible area of the web page) */
-  background-image: url("https://raw.githubusercontent.com/Jawad-Khalil/portfolio/refs/heads/main/images/profile-background.avif"); /* Visually appealing background image to the container */
+  background-image: url("https://images.unsplash.com/photo-1495081703108-1fdad36fcb5a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Visually appealing background image to the container */
   background-size: cover; /* Maintains the aspect ratio of the image while covering the entire container */
   background-position: center; /* Focal point of the background image is centered, */
 }
@@ -143,14 +147,6 @@ section h2 {
   font-size: 35px;
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
   margin-left: 15px;
-  margin-bottom: 16px;
-}
-
-/* Adjustments for the screens smaller than 768px (usually mobile devices) */
-@media only screen and (max-width: 767px) {
-  section h2 {
-    font-size: 25px;
-  }
 }
 
 section h3 {
@@ -194,8 +190,8 @@ p {
   top: 0;
 }
 
-#jobs h2::before {
-  content: "💼"; /* Symbol for Briefcase, representing jobs or employment */
+#experience h2::before {
+  content: "💼"; /* Symbol for Briefcase, representing experience or employment */
   position: relative;
   left: -10px;
   top: 0;
@@ -224,7 +220,14 @@ section ul {
   .container {
     padding: 0 0px;
   }
-
+  section h2 {
+    font-size: 24px;
+  }
+  section h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 1px;
+  }
   #about p {
     margin-top: -7px;
     font-size: 14px;
@@ -250,54 +253,12 @@ section ul {
   margin-top: 7px;
 }
 
-/* CSS for Scroll to Top Button */
-.scroll-to-top-btn {
-  position: fixed; /* Ensures the button is always visible to the user as they scroll */
-  bottom: 20px; /* Positions the button 20 pixels away from the bottom */
-  right: 20px;
-  display: none; /* Initially hides the button from view */
-  font-size: 20px;
-  color: white; /* Sets the text or icon color to white */
-  background-color: #002b5b; /* Sets the background color of the button to a Navy Blue (#002B5B) */
-  padding: 10px; /* Ensures the button content is not cramped and has some space around it */
-  border-radius: 60%; /* Creates a circular or oval shape */
-  text-decoration: none; /* Removes any underlining from text or links inside the button */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: opacity 0.3s ease-in-out, transform 0.3s; /* Smoothly animates changes to the button’s opacity and transform properties */
-  z-index: 1000; /* Prevents the button from being hidden behind other content on the page */
-  height: 43px;
-}
-
-.scroll-to-top-btn:hover {
-  opacity: 0.8; /* Reduces the button's opacity to 80% of its original value when hovered over */
-  transform: scale(
-    1.1
-  ); /* Increases the size of the button by 10% when hovered over */
-}
-
-/* Show the button when scrolling down 20px from the top */
-.scroll-to-top-btn.show {
-  /* ".show" from the JavaScript: when the user scrolls down, triggering the button to appear */
-  display: block; /* makes the button visible and ensures it behaves like a block element */
-}
-
-/* Adjustments for the screens smaller than 768px (usually mobile devices) */
-@media (max-width: 600px) {
-  .scroll-to-top-btn {
-    bottom: 10px;
-    right: 10px;
-    font-size: 19px;
-    padding: 9px;
-    height: 38px;
-  }
-}
-
 /* "personal-info" Section */
 /* Info table */
 .info-table {
   width: 55%; /* controling the table's size relative to the parent container */
   border-collapse: collapse; /* Collapses the borders of the table and its cells into a single border */
-  font-size: 14px; /* Default font size */
+  font-size: 16px; /* Default font size */
   overflow-x: auto; /* Allows horizontal scrolling if needed */
 }
 
@@ -344,7 +305,7 @@ section ul {
 .education-table {
   width: 60%; /* width of the table*/
   border-collapse: collapse;
-  font-size: 14px; /* Default font size */
+  font-size: 16px; /* Default font size */
 }
 
 .education-table th,
@@ -425,51 +386,12 @@ section ul {
   }
 }
 
-/* "languages" Section */
-.languages-table {
-  width: 60%;
-  border-collapse: collapse;
-  font-size: 14px;
-}
-
-.languages-table th,
-.languages-table td {
-  border: 1px solid #002b5b; /* Navy Blue */
-  padding: 6px;
-  text-align: center;
-}
-
-.languages-table th {
-  background-color: #ccccff; /* Periwinkle */
-  font-weight: bold;
-}
-
-/* Responsive adjustments for smaller screens */
-@media screen and (max-width: 768px) {
-  .languages-table {
-    width: 100%;
-    font-size: 7px;
-  }
-
-  .languages-table th,
-  .languages-table td {
-    padding: 2px;
-  }
-}
-
-#languages h2::before {
-  content: "🌐"; /* Globe symbol */
-  position: relative;
-  left: -10px;
-  top: 0;
-}
-
 /* "certificates" Section
 /* Certificate Table */
 .certificate-table {
   width: 74%;
   border-collapse: collapse;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .certificate-table th,
@@ -594,7 +516,7 @@ section ul {
   margin-left: 5px;
 }
 
-.skill-info h2 {
+.skill-info h3 {
   margin-top: 0px;
   margin-bottom: 5px;
   line-height: 1.1; /* Height between the h2 lines*/
@@ -602,6 +524,7 @@ section ul {
 
 .skill-info p {
   text-align: center;
+  font-size: 16px;
 }
 
 /* Adjustments for the screens smaller than 768px (usually mobile devices) */
@@ -617,7 +540,7 @@ section a {
   font-weight: bold;
 }
 
-/* "jobs" Section */
+/* "experience" Section */
 
 /* Each job */
 .job {
@@ -631,9 +554,10 @@ section a {
 
 .job h3 {
   margin-top: 0px;
+  font-size: 24px;
 }
 /* Paragraph settings within "project" section */
-#jobs p {
+#experience p {
   margin-top: -10px;
   margin-bottom: 10px;
   margin-left: 20px;
@@ -641,17 +565,17 @@ section a {
 }
 
 @media (max-width: 767px) {
-  #jobs p {
+  #experience p {
     font-size: 14px;
   }
 }
 
-#jobs li a {
+#experience li a {
   text-decoration: none; /* Removes the underline from the link */
 }
 .job li {
   font-family: Georgia, serif;
-  font-size: 18px;
+  font-size: 16px;
   padding-left: 20px;
   border: 1px solid #002b5b; /* Navy Blue */
   border-radius: 10px;
@@ -680,6 +604,10 @@ section a {
     font-size: 14px;
   }
 
+  .job h3 {
+    font-size: 16px;
+  }
+
   .job img {
     width: 25px; /*Adjust image size as needed*/
     height: 25px;
@@ -687,14 +615,14 @@ section a {
   }
 }
 
-/* Initialize the counter for the jobs section */
-#jobs {
+/* Initialize the counter for the experience section */
+#experience {
   counter-reset: jobCounter; /* Initialize the counter */
 }
 
-#jobs .job h3::before {
+#experience .job h3::before {
   counter-increment: jobCounter; /* Increment the counter for each h2 */
-  content: "Job " counter(jobCounter) ": "; /* Display the counter before the heading text */
+  content: "No. " counter(jobCounter) ": "; /* Display the counter before the heading text */
   font-weight: bold; /* Optional: make the counter bold */
   margin-right: 4px; /* Optional: add some space between the counter and the heading text */
 }
@@ -713,13 +641,14 @@ section a {
 
 .project h3 {
   margin-top: 0px;
+  font-size: 24px;
 }
 /* Paragraph settings within "project" section */
 #projects p {
   margin-top: -10px;
   margin-bottom: 10px;
   margin-left: 20px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @media (max-width: 767px) {
@@ -733,7 +662,7 @@ section a {
 }
 .project li {
   font-family: Georgia, serif;
-  font-size: 18px;
+  font-size: 16px;
   padding-left: 20px;
   border: 1px solid #002b5b; /* Navy Blue */
   border-radius: 10px;
@@ -762,6 +691,10 @@ section a {
     font-size: 14px;
   }
 
+  .project h3 {
+    font-size: 16px;
+  }
+
   .project img {
     width: 25px; /*Adjust image size as needed*/
     height: 25px;
@@ -781,9 +714,59 @@ section a {
   margin-right: 4px; /* Optional: add some space between the counter and the heading text */
 }
 
+/* CSS for Scroll to Top Button */
+.scroll-to-top-btn {
+  position: fixed; /* Ensures the button is always visible to the user as they scroll */
+  bottom: 44px; /* Positions the button 20 pixels away from the bottom */
+  right: 10px;
+  display: none; /* Initially hides the button from view */
+  font-size: 20px;
+  color: #fff; /* Sets the text or icon color to white */
+  background-color: #002b5b; /* Sets the background color of the button to a Navy Blue (#002B5B) */
+  padding: 10px; /* Ensures the button content is not cramped and has some space around it */
+  border-radius: 60%; /* Creates a circular or oval shape */
+  text-decoration: none; /* Removes any underlining from text or links inside the button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease-in-out, transform 0.3s; /* Smoothly animates changes to the button’s opacity and transform properties */
+  z-index: 1000; /* Prevents the button from being hidden behind other content on the page */
+  height: 43px;
+}
+
+.scroll-to-top-btn:hover {
+  opacity: 0.8; /* Reduces the button's opacity to 80% of its original value when hovered over */
+  transform: scale(
+    1.1
+  ); /* Increases the size of the button by 10% when hovered over */
+}
+
+/* Show the button when scrolling down 20px from the top */
+.scroll-to-top-btn.show {
+  /* ".show" from the JavaScript: when the user scrolls down, triggering the button to appear */
+  display: block; /* makes the button visible and ensures it behaves like a block element */
+}
+
+/* Adjustments for the screens smaller than 768px (usually mobile devices) */
+@media (max-width: 600px) {
+  .scroll-to-top-btn {
+    bottom: 40px;
+    right: 5px;
+    font-size: 19px;
+    padding: 5px;
+    height: 35px;
+  }
+}
+
 /* "thanks" Section */
-#thanks h4 {
-  margin-left: 20px;
+#thanks p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  #thanks p {
+  font-size: 14px;
+    max-width: 400px;
+}
 }
 
 /* Footer styles */
@@ -819,7 +802,7 @@ section a {
 /* Adjustments for the screens smaller than 768px (usually mobile devices) */
 @media screen and (max-width: 768px) {
   .footer {
-    padding: 10px 0;
+    padding: 10px 0px;
     font-size: 12px;
   }
 }
