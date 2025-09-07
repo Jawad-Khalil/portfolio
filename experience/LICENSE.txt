@@ -28,7 +28,7 @@ The following are excluded from this license and remain **all rights reserved**
 by the author, Jawad Khalil:
 
 1. The entire `/experience/images/` folder and its contents.  
-2. Personal information (e.g., name and email) displayed on the experience page.  
+2. Personal information (e.g., email) displayed on the experience page.  
 
-These excluded items may not be copied, used, or distributed without explicit 
+These excluded items are for reference purposes only and may not be copied, used, or distributed without explicit 
 written permission from the author.
