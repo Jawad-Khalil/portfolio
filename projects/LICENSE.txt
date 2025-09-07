@@ -22,4 +22,4 @@ SOFTWARE.
 
 Note: The following files are excluded from this license and are not to be copied, used, or distributed:
 - All subfolders inside the "../projects" directory containing images or other media assets
-- Any personal information (such as email addresses) included for demonstration purposes
+- Any personal information (such as email addresses) included for reference purposes
