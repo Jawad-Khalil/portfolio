@@ -290,13 +290,6 @@ h1 {
 }
 
 /* Style for section text paragraphs */
-.job p,
-.overview li,
-.links li,
-.achievements li {
-  color: black; /* Dark color for section text */
-  font-weight: normal;
-}
 
 .role p,
 .client-team p,
@@ -315,11 +308,6 @@ h1 {
   .overview ul,
   .links ul {
     margin-top: 0px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .links li {
-    font-size: 14px;
   }
 }
 
@@ -364,7 +352,6 @@ h1 {
   .client-team p,
   .achievements li {
     padding: 1px 1px; /* Reduced padding */
-    font-size: 16px; /* Smaller font size */
     margin-top: 5px;
     margin-bottom: 0px;
   }
@@ -403,6 +390,33 @@ h1 {
   display: inline-block;
   width: 1em;
   margin-left: -1.5em; /* Positions bullet point */
+}
+@media screen and (max-width: 767px) {
+  .links li,
+  .skills-list li,
+  .job p,
+  .overview li,
+  .links li,
+  .duration p,
+  .client-team p,
+  .achievements li,
+  .thanks p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .links li,
+  .skills-list li,
+  .job p,
+  .overview li,
+  .links li,
+  .duration p,
+  .client-team p,
+  .achievements li,
+  .thanks p {
+    font-size: 14px;
+  }
 }
 
 .challenges table {
@@ -498,21 +512,19 @@ figcaption {
   margin-left: 35px;
 }
 
+@media screen and (max-width: 767px) {
+  .thanks {
+    margin-top: 5px;
+    margin-left: 20px;
+    max-width: 400px;
+  }
+}
+
 .thanks p {
   font-weight: bold;
 }
 
 /* Responsive adjustments */
-@media screen and (max-width: 767px) {
-  .thanks p {
-    font-size: 14px;
-  }
-  .thanks {
-    margin-top: 5px;
-    margin-left: 5px;
-    max-width: 400px;
-  }
-}
 
 /* Footer styles */
 .footer {
