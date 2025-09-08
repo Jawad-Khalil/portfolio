@@ -556,12 +556,12 @@ section a {
   margin-top: 0px;
   font-size: 24px;
 }
-/* Paragraph settings within "project" section */
+
 #experience p {
   margin-top: -10px;
   margin-bottom: 10px;
   margin-left: 20px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @media (max-width: 767px) {
@@ -661,6 +661,7 @@ section a {
   text-decoration: none; /* Removes the underline from the link */
 }
 .project li {
+  list-style: none; /* remove default bullet */
   font-family: Georgia, serif;
   font-size: 16px;
   padding-left: 20px;
@@ -670,6 +671,21 @@ section a {
   margin: 5px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
+}
+
+#projects li::before {
+  content: "❖"; /* Symbol for Folder, representing organized projects */
+  position: relative;
+  left: 5px;
+  margin-right: 10px;
+  top: 0;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  #projects li::before {
+    font-size: 14px;
+  }
 }
 
 .project ul {
@@ -764,9 +780,9 @@ section a {
 
 @media screen and (max-width: 767px) {
   #thanks p {
-  font-size: 14px;
+    font-size: 14px;
     max-width: 400px;
-}
+  }
 }
 
 /* Footer styles */
