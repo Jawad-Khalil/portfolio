@@ -470,7 +470,7 @@ figcaption {
 
 #scrollToTopBtn {
   position: fixed;
-  bottom: 20px;
+  bottom: 37px;
   right: 20px;
   background: #00695c;
   color: white;
@@ -478,7 +478,8 @@ figcaption {
   border-radius: 50%;
   display: none;
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 18px;
+  height: 25px;
 }
 
 #scrollToTopBtn:hover {
@@ -497,11 +498,11 @@ figcaption {
 /* Adjustments for the screens smaller than 768px (usually mobile devices) */
 @media (max-width: 600px) {
   #scrollToTopBtn {
-    bottom: 10px;
+    bottom: 35px;
     right: 10px;
-    font-size: 19px;
+    font-size: 12px;
     padding: 9px;
-    height: 38px;
+    height: 13px;
   }
 }
 
