@@ -156,6 +156,10 @@ section h3 {
   margin-top: 15px;
 }
 
+#about p {
+  margin-bottom: 5px;
+}
+
 /* Paragraph styles */
 p {
   text-align: justify;
@@ -216,7 +220,7 @@ section ul {
 }
 
 /* Adjustments for the screens smaller than 768px (usually mobile devices) */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     padding: 0 0px;
   }
@@ -233,6 +237,7 @@ section ul {
     font-size: 14px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 15px;
   }
 
   #skills p {
