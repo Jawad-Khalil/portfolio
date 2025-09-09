@@ -77,7 +77,7 @@ async function fetchLastUpdated() {
       document.getElementById("lastUpdatedHeader").textContent =
         "Last Updated: " + formattedDate;
       document.getElementById("lastUpdatedFooter").textContent =
-        "Last Updated: " + formattedDate;
+        "Updated on: " + formattedDate;
     } else {
       document.getElementById("lastUpdatedHeader").textContent =
         "No update info available.";
