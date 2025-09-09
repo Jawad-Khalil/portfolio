@@ -73,15 +73,22 @@ async function fetchLastUpdated() {
       const options = { year: "numeric", month: "short", day: "numeric" };
       const formattedDate = commitDate.toLocaleDateString("en-US", options);
 
-      document.getElementById("lastUpdated").textContent =
+      // Update both header and footer
+      document.getElementById("lastUpdatedHeader").textContent =
+        "Last Updated: " + formattedDate;
+      document.getElementById("lastUpdatedFooter").textContent =
         "Last Updated: " + formattedDate;
     } else {
-      document.getElementById("lastUpdated").textContent =
+      document.getElementById("lastUpdatedHeader").textContent =
+        "No update info available.";
+      document.getElementById("lastUpdatedFooter").textContent =
         "No update info available.";
     }
   } catch (error) {
     console.error("Error fetching update date:", error);
-    document.getElementById("lastUpdated").textContent =
+    document.getElementById("lastUpdatedHeader").textContent =
+      "Error loading update date.";
+    document.getElementById("lastUpdatedFooter").textContent =
       "Error loading update date.";
   }
 }
