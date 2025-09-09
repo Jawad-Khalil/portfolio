@@ -790,8 +790,8 @@ section a {
     bottom: 42px;
     right: 5px;
     font-size: 19px;
-    padding: 5px;
-    height: 30px;
+    padding: 5px 6px;
+    height: 32px;
   }
 }
 
