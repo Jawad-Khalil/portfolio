@@ -814,7 +814,12 @@ section a {
   padding: 10px 0;
   text-align: center;
   font-size: 14px;
+  font-weight: bold;
   color: #ffffe0;
+}
+
+#lastUpdatedFooter {
+  font-style: italic;
 }
 
 .footer-content {
@@ -830,7 +835,7 @@ section a {
 /* Link styles */
 .footer-content a {
   color: #3498db;
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: bold;
 }
 
