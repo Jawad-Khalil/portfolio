@@ -842,4 +842,7 @@ section a {
     padding: 10px 0px;
     font-size: 12px;
   }
+  .footer-content {
+    margin-left: -13px;
+  }
 }
