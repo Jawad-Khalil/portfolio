@@ -9,12 +9,14 @@ body {
 
 h1 {
   margin-bottom: 10px;
+  margin-top: 15px;
   font-size: 36px;
 }
 
 @media (max-width: 768px) {
   h1 {
     font-size: 26px;
+    margin-top: 10px;
   }
 }
 
@@ -22,7 +24,7 @@ header {
   background-color: #00695c; /* Dark Emerald Green*/
   color: white;
   text-align: center;
-  padding: 1em;
+  padding: 1px;
 }
 
 .last-updated-header {
@@ -31,10 +33,10 @@ header {
 }
 
 @media only screen and (max-width: 767px) {
-.last-updated-header {
-  font-weight: bold;
-  margin-top: -13px;
-  font-size: 14px;
+  .last-updated-header {
+    font-weight: bold;
+    margin-top: -13px;
+    font-size: 12px;
   }
 }
 
@@ -553,10 +555,11 @@ html {
 
 .footer-content a {
   color: #3498db;
-  text-decoration: underline;  
+  text-decoration: underline;
 }
 
-#last-updated-footer, #last-updated-header {
+#last-updated-footer,
+#last-updated-header {
   font-style: italic;
 }
 
