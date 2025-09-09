@@ -58,3 +58,32 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+async function fetchLastUpdated() {
+  try {
+    const response = await fetch(
+      "https://api.github.com/repos/Jawad-Khalil/portfolio/commits?path=index.html&page=1&per_page=1"
+    );
+    const data = await response.json();
+
+    if (data.length > 0) {
+      const commitDate = new Date(data[0].commit.author.date);
+
+      // Format date nicely (e.g., Sep 7, 2025)
+      const options = { year: "numeric", month: "short", day: "numeric" };
+      const formattedDate = commitDate.toLocaleDateString("en-US", options);
+
+      document.getElementById("lastUpdated").textContent =
+        "Last Updated: " + formattedDate;
+    } else {
+      document.getElementById("lastUpdated").textContent =
+        "No update info available.";
+    }
+  } catch (error) {
+    console.error("Error fetching update date:", error);
+    document.getElementById("lastUpdated").textContent =
+      "Error loading update date.";
+  }
+}
+
+fetchLastUpdated();
