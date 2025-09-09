@@ -10,6 +10,8 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6; /* Distance between two lines  */
   background-color: white;
+  counter-reset: cert-counter;
+  counter-reset: edu-counter;
 }
 
 .container h2 {
@@ -408,6 +410,17 @@ section ul {
     width: 1%;
   }
 }
+/* Reset counter for the education table */
+.education-table {
+  counter-reset: edu-counter;
+}
+
+/* Increment counter on each row */
+.education-table tbody tr td:first-child::before {
+  counter-increment: edu-counter;
+  content: counter(edu-counter);
+  font-weight: bold;
+}
 
 /* "certificates" Section
 /* Certificate Table */
@@ -484,6 +497,22 @@ section ul {
   .certificate-table td:nth-child(4) {
     width: 20%;
   }
+}
+
+/* increment for each table body row */
+.certificate-table tbody tr {
+  counter-increment: cert-counter;
+}
+
+/* show counter in first cell */
+.certificate-table tbody tr td:first-child::before {
+  content: counter(cert-counter);
+  font-weight: bold;
+}
+
+.certificate-table td:nth-child(3) {
+  font-weight: bold;
+  font-style: italic;
 }
 
 /* "skills" Section */
