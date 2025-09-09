@@ -37,7 +37,6 @@ header {
 
 header p {
   font-weight: bold;
-  font-size: ;
 }
 
 .top-menu {
@@ -785,11 +784,11 @@ section a {
 /* Adjustments for the screens smaller than 768px (usually mobile devices) */
 @media (max-width: 600px) {
   .scroll-to-top-btn {
-    bottom: 40px;
+    bottom: 42px;
     right: 5px;
     font-size: 19px;
     padding: 5px;
-    height: 35px;
+    height: 30px;
   }
 }
 
@@ -808,11 +807,11 @@ section a {
 
 /* Footer styles */
 .footer {
-  background-color: black;
+  background-color: #002b5b;
   padding: 10px 0;
   text-align: center;
   font-size: 14px;
-  color: #f2f2f2;
+  color: #ffffe0;
 }
 
 .footer-content {
@@ -843,6 +842,6 @@ section a {
     font-size: 12px;
   }
   .footer-content {
-    margin-left: -13px;
+    margin-left: -5px;
   }
 }
