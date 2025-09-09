@@ -8,7 +8,7 @@ body {
 header {
   background-color: #3498db; /* Sky Blue */
   color: white;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   position: relative;
 }
@@ -20,6 +20,7 @@ header {
 }
 
 h1 {
+  margin-top: 15px;
   margin-bottom: 5px;
   font-size: 36px;
 }
@@ -31,9 +32,35 @@ h1 {
   }
 }
 
+.last-updated-header {
+  font-weight: bold;
+  margin-top: -12px;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 767px) {
+  .last-updated-header {
+    font-weight: bold;
+    margin-top: -13px;
+    font-size: 12px;
+  }
+}
+
+.contact-info {
+  font-weight: bold;
+  margin-top: -5px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-info {
+    font-size: 14px;
+    margin-top: -7px;
+  }
+}
+
 .contact-info img {
   vertical-align: middle;
-  margin-right: 3px;
+  margin-right: 1px;
 }
 
 .navbar {
@@ -167,7 +194,7 @@ h1 {
 .welcome p {
   text-indent: 2em;
   font-family: sans-serif; /* Arial, Helvetica, or similar */
-  font-size: 16px;
+  font-size: 18px;
   text-align: justify;
   margin-top: 10px;
 }
@@ -283,6 +310,17 @@ h1 {
   }
 }
 
+.skills-list li,
+.job p,
+.role p,
+.overview li,
+.links li,
+.duration p,
+.client-team p,
+.achievements li {
+  font-size: 18px;
+}
+
 @media screen and (max-width: 767px) {
   .skills-list {
     margin-top: 5px;
@@ -337,7 +375,6 @@ h1 {
   padding: 5px 10px; /* Padding inside each item */
   border-radius: 15px; /* Rounded corners */
   color: #e67e22; /* Carrot Orange */
-  font-size: 16px; /* Font size */
   font-weight: bold; /* Bold text */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
@@ -364,7 +401,7 @@ h1 {
 }
 .overview ul li::before {
   content: "\27A4"; /* bullet point symbol */
-  font-size: 1em; /* Increase the size of the bullet */
+  font-size: 18px; /* Increase the size of the bullet */
   color: #3498db; /* Custom bullet color */
   font-weight: bold;
   display: inline-block;
@@ -374,7 +411,7 @@ h1 {
 
 .links ul li::before {
   content: "\2192"; /* bullet point symbol */
-  font-size: 1.3em; /* size of the bullet */
+  font-size: 18px; /* size of the bullet */
   color: #3498db; /* Custom bullet color */
   font-weight: bold;
   display: inline-block;
@@ -384,25 +421,12 @@ h1 {
 
 .achievements ul li::before {
   content: "\2713"; /* bullet point symbol */
-  font-size: 1.1em; /* size of the bullet */
+  font-size: 18px; /* size of the bullet */
   color: #3498db; /* Custom bullet color */
   font-weight: bold;
   display: inline-block;
   width: 1em;
   margin-left: -1.5em; /* Positions bullet point */
-}
-@media screen and (max-width: 767px) {
-  .links li,
-  .skills-list li,
-  .job p,
-  .overview li,
-  .links li,
-  .duration p,
-  .client-team p,
-  .achievements li,
-  .thanks p {
-    font-size: 14px;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -410,7 +434,6 @@ h1 {
   .skills-list li,
   .job p,
   .overview li,
-  .links li,
   .duration p,
   .client-team p,
   .achievements li,
@@ -484,7 +507,7 @@ figure {
 }
 
 figcaption {
-  font-size: 16px; /* Slightly smaller than body text */
+  font-size: 18px; /* Slightly smaller than body text */
   font-weight: bold;
   color: #555; /* Soft gray text */
   margin-top: 4px; /* Space above the caption */
