@@ -27,8 +27,17 @@ header {
 /* Adjustments for the screens smaller than 768px (usually mobile devices) */
 @media only screen and (max-width: 767px) {
   header {
-    padding: 10px 0; /* Small padding for smaller screens */
+    padding: 5px 5px; /* Small padding for smaller screens */
   }
+
+  header h1 {
+    margin-bottom: 0px;
+  }
+}
+
+header p {
+  font-weight: bold;
+  font-size: ;
 }
 
 .top-menu {
@@ -39,19 +48,26 @@ header {
   display: inline-block; /* More versatile in terms of layout control compared to purely inline elements */
 }
 
-.center h1,
-.center p {
-  margin: 0;
+.last-updated {
+  text-align: center;
 }
 
-.email_info a {
+@media screen and (max-width: 767px) {
+  .last-updated {
+    margin-top: -11px;
+  }
+  .email-info {
+    margin-top: 0px;
+  }
+}
+
+.email-info a {
   color: #ffffe0; /* Soft Yellow */
+  font-weight: bold;
+  font-style: italic;
 }
 
-.email_info img {
-  margin-bottom: -4px;
-}
-.mobile_info img {
+.email-info img {
   margin-bottom: -4px;
 }
 
@@ -168,7 +184,7 @@ p {
 /* Specific symbols for each section */
 #personal-info h2::before {
   content: "📋"; /* Symbol for Personal Information */
-  position: relative; /* fine-tuning of the symbol's placement relative to the <h1> heading */
+  position: relative; /* fine-tuning of the symbol's placement relative to the <h2> heading */
   left: -10px;
   top: 0; /* the symbol is vertically aligned with the text */
 }
