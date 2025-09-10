@@ -489,7 +489,7 @@ section ul {
 
   .certificate-table th:nth-child(3),
   .certificate-table td:nth-child(3) {
-    width: 1%;
+    width: 3%;
     text-align: center;
   }
 
@@ -511,8 +511,8 @@ section ul {
 }
 
 .certificate-table td:nth-child(3) {
-  font-weight: bold;
   font-style: italic;
+  font-weight: bold;
 }
 
 /* "skills" Section */
