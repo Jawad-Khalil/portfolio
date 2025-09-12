@@ -566,17 +566,21 @@ figcaption {
 
 .footer-content p {
   margin: 0;
+  font-weight: bold;
 }
 
 /* Link styles */
 .footer-content a {
   color: #3498db;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .footer-content a:hover {
   text-decoration: underline;
+}
+
+#last-updated-footer {
+  font-style: italic;
 }
 
 /* Adjustments for the screens smaller than 768px (usually mobile devices) */
