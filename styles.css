@@ -489,7 +489,7 @@ section ul {
 
   .certificate-table th:nth-child(3),
   .certificate-table td:nth-child(3) {
-    width: 3%;
+    width: 4%;
     text-align: center;
   }
 
