@@ -1,1 +1,1 @@
-## Media folder for the Risk Assessment for the City Aluminium Works.
+## Media folder for the project "Risk Assessment for the City Aluminium Works".
